@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover amazing travel destinations and book your dream vacation with TravelWorld">
+    <title>TravelWorld - Your Journey Begins Here</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>✈️ TravelWorld</h1>
+                </div>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                        <li><a href="#packages" class="nav-link">Packages</a></li>
+                        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search destinations..." class="search-input" id="searchInput">
+                        <button class="search-btn" id="searchBtn">🔍</button>
+                    </div>
+                    <button class="btn btn-login" id="loginBtn">Login</button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Explore the World with Us</h2>
+                <p class="hero-subtitle">Discover amazing destinations and create unforgettable memories</p>
+                
+                <div class="hero-search">
+                    <div class="search-group">
+                        <label for="destination">Destination</label>
+                        <select id="destination" class="search-select">
+                            <option value="">Select a destination</option>
+                            <option value="paris">Paris, France</option>
+                            <option value="tokyo">Tokyo, Japan</option>
+                            <option value="bali">Bali, Indonesia</option>
+                            <option value="maldives">Maldives</option>
+                            <option value="dubai">Dubai, UAE</option>
+                            <option value="newyork">New York, USA</option>
+                            <option value="santorini">Santorini, Greece</option>
+                            <option value="iceland">Reykjavik, Iceland</option>
+                        </select>
+                    </div>
+                    <div class="search-group">
+                        <label for="checkIn">Check In</label>
+                        <input type="date" id="checkIn" class="search-input-date">
+                    </div>
+                    <div class="search-group">
+                        <label for="checkOut">Check Out</label>
+                        <input type="date" id="checkOut" class="search-input-date">
+                    </div>
+                    <button class="btn btn-primary btn-explore" id="exploreBtn">Explore Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations Section -->
+    <section class="destinations" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Destinations</h2>
+                <p class="section-subtitle">Discover the most sought-after travel destinations around the globe</p>
+            </div>
+            
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/400/300?random=1" alt="Paris, France">
+                        <div class="card-overlay">
+                            <span class="card-badge">Trending</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Paris, France</h3>
+                        <p>The City of Light awaits with its romantic streets, world-class museums, and iconic Eiffel Tower.</p>
+                        <div class="card-footer">
+                            <span class="price">From $899</span>
+                            <span class="duration">7 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/400/300?random=2" alt="Tokyo, Japan">
+                        <div class="card-overlay">
+                            <span class="card-badge">Hot Deal</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Tokyo, Japan</h3>
+                        <p>Experience the perfect blend of ancient traditions and cutting-edge technology in Japan's vibrant capital.</p>
+                        <div class="card-footer">
+                            <span class="price">From $1,299</span>
+                            <span class="duration">10 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/400/300?random=3" alt="Bali, Indonesia">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Tropical paradise with stunning beaches, lush rice terraces, and rich cultural heritage.</p>
+                        <div class="card-footer">
+                            <span class="price">From $749</span>
+                            <span class="duration">6 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/400/300?random=4" alt="Maldives">
+                        <div class="card-overlay">
+                            <span class="card-badge">Luxury</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Maldives</h3>
+                        <p>Crystal-clear waters, pristine beaches, and overwater bungalows in this tropical paradise.</p>
+                        <div class="card-footer">
+                            <span class="price">From $1,899</span>
+                            <span class="duration">5 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/400/300?random=5" alt="Dubai, UAE">
+                    </div>
+                    <div class="card-content">
+                        <h3>Dubai, UAE</h3>
+                        <p>Modern luxury meets Arabian culture with stunning skyscrapers, shopping, and desert adventures.</p>
+                        <div class="card-footer">
+                            <span class="price">From $1,099</span>
+                            <span class="duration">5 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/400/300?random=6" alt="New York, USA">
+                    </div>
+                    <div class="card-content">
+                        <h3>New York, USA</h3>
+                        <p>The city that never sleeps offers world-famous landmarks, Broadway shows, and diverse cuisine.</p>
+                        <div class="card-footer">
+                            <span class="price">From $999</span>
+                            <span class="duration">6 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/400/300?random=7" alt="Santorini, Greece">
+                        <div class="card-overlay">
+                            <span class="card-badge">Romantic</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Santorini, Greece</h3>
+                        <p>Whitewashed buildings, blue-domed churches, and breathtaking sunsets over the Aegean Sea.</p>
+                        <div class="card-footer">
+                            <span class="price">From $1,199</span>
+                            <span class="duration">7 Days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/400/300?random=8" alt="Reykjavik, Iceland">
+                    </div>
+                    <div class="card-content">
+                        <h3>Reykjavik, Iceland</h3>
+                        <p>Experience the Northern Lights, geothermal pools, and stunning natural landscapes.</p>
+                        <div class="card-footer">
+                            <span class="price">From $1,499</span>
+                            <span class="duration">8 Days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Packages Section -->
+    <section class="packages" id="packages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Travel Packages</h2>
+                <p class="section-subtitle">Handpicked vacation packages designed for unforgettable experiences</p>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://picsum.photos/500/350?random=10" alt="European Adventure">
+                        <div class="package-badge">Best Seller</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>European Adventure</h3>
+                        <p class="package-description">Explore 5 iconic European cities including Paris, Rome, Barcelona, Amsterdam, and London in this comprehensive tour.</p>
+                        <ul class="package-features">
+                            <li>✓ 14 nights accommodation</li>
+                            <li>✓ Daily breakfast included</li>
+                            <li>✓ Guided city tours</li>
+                            <li>✓ Airport transfers</li>
+                        </ul>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">Starting from</span>
+                                <span class="price-amount">$2,499</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://picsum.photos/500/350?random=11" alt="Asian Discovery">
+                        <div class="package-badge">Special Offer</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Asian Discovery</h3>
+                        <p class="package-description">Journey through Thailand, Vietnam, and Cambodia. Experience temples, beaches, and vibrant cultures.</p>
+                        <ul class="package-features">
+                            <li>✓ 12 nights accommodation</li>
+                            <li>✓ All meals included</li>
+                            <li>✓ Cultural experiences</li>
+                            <li>✓ Internal flights</li>
+                        </ul>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">Starting from</span>
+                                <span class="price-amount">$1,899</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://picsum.photos/500/350?random=12" alt="Caribbean Paradise">
+                        <div class="package-badge">All Inclusive</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>Caribbean Paradise</h3>
+                        <p class="package-description">Relax in luxury all-inclusive resorts across Jamaica, Bahamas, and Barbados with pristine beaches.</p>
+                        <ul class="package-features">
+                            <li>✓ 10 nights luxury resort</li>
+                            <li>✓ All-inclusive dining</li>
+                            <li>✓ Water sports activities</li>
+                            <li>✓ Spa treatments</li>
+                        </ul>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">Starting from</span>
+                                <span class="price-amount">$3,299</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://picsum.photos/500/350?random=13" alt="African Safari">
+                        <div class="package-badge">Adventure</div>
+                    </div>
+                    <div class="package-content">
+                        <h3>African Safari</h3>
+                        <p class="package-description">Witness the Big Five in Kenya and Tanzania. Experience the great migration and traditional Maasai culture.</p>
+                        <ul class="package-features">
+                            <li>✓ 9 nights safari lodges</li>
+                            <li>✓ Full board meals</li>
+                            <li>✓ Game drives daily</li>
+                            <li>✓ Professional guide</li>
+                        </ul>
+                        <div class="package-footer">
+                            <div class="package-price">
+                                <span class="price-label">Starting from</span>
+                                <span class="price-amount">$4,199</span>
+                                <span class="price-per">per person</span>
+                            </div>
+                            <button class="btn btn-primary">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="offers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Special Offers</h2>
+                <p class="section-subtitle">Limited time deals you don't want to miss</p>
+            </div>
+            
+            <div class="offers-grid">
+                <div class="offer-card offer-card-large">
+                    <div class="offer-content">
+                        <span class="offer-tag">Flash Sale</span>
+                        <h3>Summer Special</h3>
+                        <p>Save up to 40% on selected European destinations. Book before the end of this month!</p>
+                        <div class="offer-discount">40% OFF</div>
+                        <button class="btn btn-secondary">Grab Deal</button>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <span class="offer-tag">Early Bird</span>
+                        <h3>Book Early, Save More</h3>
+                        <p>Get 25% off when you book 3 months in advance</p>
+                        <div class="offer-discount">25% OFF</div>
+                        <button class="btn btn-secondary">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <span class="offer-tag">Group Deal</span>
+                        <h3>Travel Together</h3>
+                        <p>Special group rates for 4 or more travelers</p>
+                        <div class="offer-discount">30% OFF</div>
+                        <button class="btn btn-secondary">Get Quote</button>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-content">
+                        <span class="offer-tag">Honeymoon</span>
+                        <h3>Romance Package</h3>
+                        <p>Exclusive honeymoon packages with complimentary upgrades</p>
+                        <div class="offer-discount">Free Upgrade</div>
+                        <button class="btn btn-secondary">View Packages</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real experiences from travelers who've explored the world with us</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://i.pravatar.cc/100?img=1" alt="Sarah Johnson" class="reviewer-photo">
+                        <div class="reviewer-info">
+                            <h4>Sarah Johnson</h4>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Our European tour was absolutely amazing! Every detail was perfectly planned, and the guides were knowledgeable and friendly. TravelWorld made our dream vacation come true!"</p>
+                    <div class="review-meta">
+                        <span class="review-destination">European Adventure</span>
+                        <span class="review-date">2 weeks ago</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="Michael Chen" class="reviewer-photo">
+                        <div class="reviewer-info">
+                            <h4>Michael Chen</h4>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"The African Safari exceeded all expectations. Witnessing the wildlife in their natural habitat was breathtaking. Professional service from start to finish!"</p>
+                    <div class="review-meta">
+                        <span class="review-destination">African Safari</span>
+                        <span class="review-date">1 month ago</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://i.pravatar.cc/100?img=5" alt="Emma Rodriguez" class="reviewer-photo">
+                        <div class="reviewer-info">
+                            <h4>Emma Rodriguez</h4>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Perfect honeymoon in the Maldives! The resort was luxurious, the water was crystal clear, and TravelWorld arranged everything beautifully. Highly recommend!"</p>
+                    <div class="review-meta">
+                        <span class="review-destination">Maldives Romance</span>
+                        <span class="review-date">3 weeks ago</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://i.pravatar.cc/100?img=33" alt="David Smith" class="reviewer-photo">
+                        <div class="reviewer-info">
+                            <h4>David Smith</h4>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">☆</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Great experience in Asia! The cultural immersion was incredible. Only minor issue was some tight scheduling, but overall fantastic value for money."</p>
+                    <div class="review-meta">
+                        <span class="review-destination">Asian Discovery</span>
+                        <span class="review-date">1 month ago</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://i.pravatar.cc/100?img=9" alt="Jessica Lee" class="reviewer-photo">
+                        <div class="reviewer-info">
+                            <h4>Jessica Lee</h4>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Bali was paradise! From the beautiful temples to the stunning beaches, everything was perfect. TravelWorld's attention to detail made this trip unforgettable."</p>
+                    <div class="review-meta">
+                        <span class="review-destination">Bali Getaway</span>
+                        <span class="review-date">2 weeks ago</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://i.pravatar.cc/100?img=68" alt="Robert Taylor" class="reviewer-photo">
+                        <div class="reviewer-info">
+                            <h4>Robert Taylor</h4>
+                            <div class="rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Dubai was spectacular! The modern architecture combined with traditional culture was fascinating. Excellent organization and wonderful accommodations throughout."</p>
+                    <div class="review-meta">
+                        <span class="review-destination">Dubai Luxury</span>
+                        <span class="review-date">3 weeks ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>✈️ TravelWorld</h3>
+                    <p>Your trusted partner in creating unforgettable travel experiences around the globe.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶️</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Popular Destinations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Paris</a></li>
+                        <li><a href="#">Tokyo</a></li>
+                        <li><a href="#">Bali</a></li>
+                        <li><a href="#">Maldives</a></li>
+                        <li><a href="#">Dubai</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li>📧 info@travelworld.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Travel Street, NY 10001</li>
+                        <li>🕐 Mon-Fri: 9AM - 6PM EST</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 TravelWorld. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
